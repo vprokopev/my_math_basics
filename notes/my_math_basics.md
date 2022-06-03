@@ -1,17 +1,87 @@
+
+# Basic, fundamentals
+- All we have is sets of objects and operations (functions/transformations/mappings).
+- Sets are objects too.
+- Opearions can be used as objects themselves - as inputs to other operations.
+- Not everything is an operation: objects that are wrapped (take 0 arguments and return
+  themselves) are not the same as unwrapped object.
+- Examples of sets of objects and operations on them:
+    - Numbers are object that encode some quantity.
+      Couning, addition, multiplication, substraction etc - operations on numbers.
+    - Geometric objects are sets of points.
+      Rotations, angle and distance measurements are all operations on those sets
+      of points.
+
+
+
+# Geometry
+- We create a Euclidean space and then operate on sets of points in that space
+- any figure is just a set of points in our space
+- In a Euclidean space, smallest regions of space are squares/cubes
+
+
+
 # Spaces
 - One way to think of the Euclidean plane is as a set of points satisfying certain relationships, 
   expressible in terms of distance and angles. 
-- Our space where I know (see):
+- We have our real space where any particle can move from one point to another.
+  We, as a bunch of particles, move in that space. And that is all we do basically.
+- In our real space we live in we know (see):
     - How points are located, in relation to each other (order).
+    - We can step to (and only to) neighbouring points.
     - How much a movement between points cost (distance).
-    - Can move only to neighbouring points.
-- I can then label points of out real space with a pints from a equcledian space the way that:
-    - Preserves order of points and relative positions
-    - preserves the fact that making a (0, 0) -> (1, 1) or similar step cost sqrt(2) of our
-    real space (distance) and making a (0, 0) -> (0, 1) step or similar, cost 1.
+      Movement in any direction cost the same.
+- We can then label points of our real space somehow, using some labelling method. 
+- One method is label points in real space is called "equcledian space":
+    - In a Euclidean space, smallest regions of space are squares/cubes
+    - It actually does not label all real points, because diagonal steps cost more
+      so it is only an approximation. We can not go to the smallest region of space
+      using this method. we can only zoom out a bit and label like every 10th or 100th
+      point of a real space that will make our labelling look good.
+    - In this approximation, moving to a diagonal neighbouring point cost sqrt(2), instead of 1.
+      Moving to other neighbours cost 1, as expected.
+    - So, we zoom out a bit, label each 100th point of real space with a Euclidean space points
+      say that this is a smallest region of space and we will use it as such.
+    - This is just a visual labelling. And using a visual labelling we undesrtand that diagonal
+      movement cost sqrt(2) steps on real space.
+    - As a distance between our imaginate Euclidian space, we use distance between those points in
+      a real physical space. Like: "ok, if we take that amount of space as 1 and label space
+      using 2 perpendicular axis to that orthogonal projection gives us the vector, then the
+      distance between any 2 points will be the amounty of those unit regions".
+    - In linear algebra we pretend the Euclidean space is the reality (it is very convenient)
+      and use it for everything.
+    - So, in short: label each 100th point of real space the way that there are 2 axis with
+      equal steps and orthogonal to each other and then pretent that it is a real space, but
+      only use labelled dots now. Amount of real space steps between those dots will be how
+      we define distance between our Euclidean dots.
 - That is it, I just labelled all points of real space with my Euclidian points in a
   meaningful and convenient way. Now I can see that a distance between my points is actually
   a distance in a real space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Да, так получается что минимально возможный шаг по диагонали больше минимально возможного
   шага вбок/вверх, что бред, так как выбрать нклон осей мы можем любой и диагоняль можем
   направить в любом направлении. Но мы миримся с этим ради удобства.
