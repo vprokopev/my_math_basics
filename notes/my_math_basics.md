@@ -60,6 +60,11 @@
 
 
 
+<img src="img/hex_circle.png" width="200"/><br>
+<img src="img/hex_line.png" width="200"/><br>
+<img src="img/hex_to_eucl_diagonal_step.png" width="200"/><br>
+
+
 
 
 
