@@ -1,5 +1,5 @@
 
-# Basic, fundamentals
+# Everything is sets and transformations
 - All we have is sets of objects and operations (functions/transformations/mappings).
 - Sets are objects too.
 - Opearions can be used as objects themselves - as inputs to other operations.
@@ -12,13 +12,228 @@
       Rotations, angle and distance measurements are all operations on those sets
       of points.
 
+- Nothin in the middle:
+    1. Engeneer, analist, a bit of math for interviews, mostly analist.
+    Здесь отпусти себя и разреши себе тупо по инженерному херачить, тупо как
+    vim или tmux больше запоминать и практиковаться, не парься по фундаменту
+    Draw a big picture and then study smaller parts.
+    2. Super deep math knowlage scientist
+    Тут супер максимально фундаментально с пониманием итд.
+
+TODO:
+1. Using facts about real space (line 5 in "spaces") describe the process of building
+  a Euclidean space and then measuring distances and lengths (squiggly lines) in that
+  space using rotations of axis.
+  Если линии и любые фигуры это наборы точек то измерять всё нужно в числе точек.
+  Но мы в евклидовом пространстве так не делаем, мы измеряем типа если вот взять и развернуть ось.
+  Получается что да, мы дробим пространство на квадратики, но чтобы посчитать расстояние, мы
+  разворачиваем оси чтобы квадратики ровно встали, чтобы дать там длину в реальном пространстве
+  как будто помехи на кривость хождения по квадратикам у нас нет.
+  Представь площадь прямоугольника - так лечге всего. Есть типа выровненный по осям четкий
+  прямоугольник а есть развернутый стремный. Но в реальном пространсве наших тупых осей нет и в реальном
+  оба этих прямоугольника четкие. Так что мы как бы пользуемся своими тупыми осями но в то-же время
+  постоянно типа их разворачиваем для того чтобы число кубиков/точек нашего кривого пространства
+  совпадало с числом точек реального пространства.
 
 
-# Geometry
-- We create a Euclidean space and then operate on sets of points in that space
-- any figure is just a set of points in our space
-- In a Euclidean space, smallest regions of space are squares/cubes
 
+
+- SHORT:
+  Real space is discrete and we can feel (but not see/imagine) amount of steps between points
+  in a physical space.
+- To reason about gemetrical figures we need a way to label points in a physical space.
+- We came up with a Euclidean space.
+    - Euclidean space __defines a unit amount of steps__ in a real space as a unit distance.
+    - Euclidean space __uses right angles as an axiom__. 
+      Right angles can be defined in different ways.
+      Right angles are just convenient to use.
+- Now all geometric objects (sets of pounts of real space) are __defined somehow in terms
+  of points of our Euclidean space__.
+- Using properties of right angles, we can algebraically count different facts about geometric
+  figures that are in our Euclidean space.
+- В общем тупо пометили точки реального пространства с помощью прямых углов и теперь можем
+  вывести всякие формулы про всякие фигуры итд.
+- Могли бы пометить по другому и таких разметок очень много.
+- Геометрические фигуры это тупо наборы точек реального пространства
+  Их можно видеть и как наборы точек Евклидового пространства, но это будет не точно, если
+  мы говорим что пространство дискретное.
+  Можно считать тупо число точек евклидового пространства в фигурах, но это будет не точно так
+  как нас интересует число точек реального пространства. В связи с этим у нас есть разные
+  способы как типа повернуть много раз евклидово пространство и посчитать число точек
+  реального пространства в единицах которые мы задали при определении Евклидового пространства.
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- We, as a participants of a real physical space, can not really see smallest parts of it.
+  __All we can is to feel how much distance if from one point to another__.
+- __Geometrical figures are measured in regions of real physical space__ as if we would turn our
+  Euclidean space to lign. 
+  Понять сколько кусочков реального пространства есть между точками (кратчайшая дистанция) мы
+  можем тупо линеечкой (которая является размеченным куском физического пространства), плюс
+  у нас для этого есть всякие формулы как это посчитать если мы создали Евклидово пространство
+  поверх реального физического.
+  Геометрические фигуры измеряются количеством кусков (тточек) реального пространства
+  И мы типа разворачиваем своё евклидово пространство чтобы измерить так как наше Евклидово
+  не совсем точно измеряет из-за того что мы сами произвольно выбрали направление квадратиков.
+- So, all geometrical figures are a bunch of Eulidean dots, yes. But the distances, volunes,
+  lengths and areas can only approximately be measured by counting those stepps between Euclidean
+  dots (accounting for a value of those steps). The more precise way is to come up with formulas
+  that give us the amount of real physical space that those figures cover (that is what we really
+  interested in). Amount of dots is just an approzimation to amount of real physical space.
+- Мы составляем евклидово пространство __изначально используя прямой угол__. Он уже есть как 
+  данное, как аксиома.
+- Хуету типа углов мы тупо задаём концептульно, абстрактно, примерно, не точно. Мы говорим
+  типа если разделить плоскость на 4 ровных гла то получится прямой угол, или в квадрате вот
+  прямой угол, ещё прямой угол это вот такое соотношение pi и радиуса. Это тупо концепция
+  которая учавствует в разных фигурах и всё.
+  Мы просто концептуально говорим ок, вот ревальное пространство, вот давайте на нем закрасим
+  два набора точек, и определим что типа прямой угол это если разделить плоскость на 4 равных
+  угла. Теперь мы этим определением пользуемся чтобы задать векторы точкам реального пространства.
+  По определению вектор присваиваем как число реального пространства от 0 на каждой из осей,
+  после того как мы на ось провелю ортогональную проекцию.
+  Всё, рисуем мы это примерно но такое определение помогает нам вывести формулы для длиины,
+  расстояния (количество точек реального пространства) между нашими векторами и такой способ
+  разметки пространства помогает легко выводить всякие факты о разных наборах точек реального
+  пространства.
+
+
+
+
+
+- Real physical space:
+    - A set of points/vectors
+    - Location. Object can be located at a particular vector
+    - Distance. Moving between points/vectors have different cost
+      and we feel this cost.
+    - To "see" something is to have a bunch of photons mote from
+      some point to a points where our eyes are located. Then we
+      detect how close different point to each other and what they
+      contain and build it in our imagination.
+    - Лучше всего всё-же представлять физическое пространство как
+      набор точек (млм многоугольников с точками в центре).
+      Между этими точками нет пространства, нет никаких линий между
+      ними по определению, но движение в любом направлении стоит
+      одинаково и нам на массштабе 
+      Как этот hex grid выровнене не важно, там нем в принципе
+      никакого выравнивания, так как это и есть пространство и то
+      что мы видим как расстояние это число шагов в этом hex grid.
+      So, if we draw a circle, that means were are equal amount of
+      real space steps to each point on a circle. 
+      So, real space only measured in the amount of real space steps.
+      And we measure distance in a Euclidean space as an estimate of
+      real space steps, not as a number of euclidean space steps/points.
+
+
+- Представляем реальное физ пространство так:
+    - A set of points/vectors + distance (cost of moving) measure.
+    - Our brain interprets this discrete set of points and discrete
+      distance measures in a particular way.
+      Those points have no spacial order/location, they are space itself,
+      they are really a mathematical set of vectors and distance measures.
+      Между этими реальными векторами есть мера расстояния (цена передвижения)
+      и мы эту цену чувствуем, но как там она реально задана под капотом хз.
+    - If we do a max zoom in, our brain can no longer interpret them in a
+      familiar continious way and just gives us a set of vectors (I assume).
+      Потом когда уже слишком приблизили, просто картинка кончается
+      наш мозг не способен её воспроизвести и мы видим тупо несколько
+      векторов отвецащих за это пространство (тупо мат символы в
+      подмножестве).
+    - Но пространство дискретное и цена передвижения в реальном пространстве это
+      тупо количество шагов.
+    - Мы можем приблизительно понять количество шагов
+    - Мы живем в множестве векторов и воспринимаем его как воспринимаем,
+      видим равную дистанцию значит реально равная дистанция.
+      Это просто картинка котрую нащ мозг красиво рисует видя точки
+      и меру дистанции между точками.
+    - Мы можем этой картинкой воспользоваться и типа поставив свои точки
+      на точки реального пространства тоже задать меру дистанции
+      между нашими точками как количество шагов (дистанцию) реального
+      пространства.
+
+
+- Одинаковое расстояние это именно одинаковое количество дискретных
+  шагов в реальном физическом пространстве.
+- Даже если типа представить реальное пространство как набор точек
+  или многоугольников где возможны только квантовые прыжки между
+  точками, то всё равуно там будет типа интуитивно видно именно расстояние
+  оно будет казаться разным, но на деле, число этих прыжков и есть
+  расстояние - по определению. 
+  Реальное пространство не расчерчено никакими многоугольниками на самом
+  деле, а если расчерчено - то нам не важно как, мы то можем воспринимать
+  только функцию - цена прыжка между точками. Это и есть пространство,
+  дистанция, площать для нас. Там под капотом не важно как рачсерчено,
+  мы воспринимаем так как задана функция дистанции между этими дискретными
+  точками. И да, это именно точки и лучше их так воспринимать, а не как
+  участки.
+- Мы видим и чувствуем это количество шагов, но не можем увидеть сам
+  процесс самого маленького шага.
+- 
+
+
+
+
+
+
+
+- Есть реальное физическое пространство.
+- Real physical space is a bunch of dots with:
+    - distance between them defined (distance for each pair of dots)
+      Distance is a measure of how expensive it is moving from one not to another
+    - Objects like particles can be located in those dots and move between them.
+- How to imagine space - dots (vectors) with connectivity measure.
+  We can not imagine smallest part of space, for us it will always seem continious. But it's not, most likely.
+  Реальное пространство не нужно и не правильно представлять как кусочки/фигурки/точечки на каком-то
+  расстоянии итд. Все это как бы уже использует пространство, что не имеет смысла.
+  Представлять пространство нужно не используя пространство - как тупо набор векторов (не обязательно
+  числовых тюплов) между которыми задана мера дистанции и мы эту меру дистанции чувствуем и с её
+  помошью её выводим расстояния, углы итд.
+  И так как наш мозг не способен представлять пространтво без пространства.
+  Мы видим реальное пространство, объекты в нем (наборы точек) и как эти объекты расположены относително
+  друг друга. Мы видим что вот в этом кусочке пространства есть вот эта частица итд.
+- Unit of a real phisical space will always be smaller
+  We would not even be able to see those discrete jumps between vectors in physical space, because
+  the "jump" is actuarry required space to jump over
+- Euclidean space is also a bunch of points with a connectivity measure.
+  Distance between points is measured as the amount of real physical space between those dots.
+  We set the unit amount of length - unit amount of real physical space
+- Далее мы разделяем пространство на маленькие кусочки определённым образом. Наше порезанное новое
+  пространство (тоже набор точек) называется евклидово пространство.
+- В Евклидовом пространсве мы используем число реального пространства как меру расстояния/длины.
+- Так как мы всегда можем повернуть свое евклидово пространство, реальное пространство таких направлений
+  же не имеет, то мы можем не мучаться с приближениями а тупо считать реальную длину в реальном пространстве
+  как бы для подсчёта длины используя количество единичных шагов реального пространства (мы выбрали сами
+  единичный шаг).
+- Когда у нашего пространства есть минимальное разрешение (точки лучше представлять чем квадратики)
+  дистанции будет дискретными и некоторые из них будут сокращаться и оверфлоу итд.
+- Так как представить минимальную длину реального пространства - невозможно, мы представляем что
+  минимальное разрешение есть у нашего выдуманного Евклидова пространства, мы сами задаём эту минимальную
+  длину и потом в числе этих длин считаем расстояния (типа если развернуть оси, то сколько минимальных
+  заданных нами расстояний тут будет).
+- Единицу реального пространства мы задали
+- Далее мы используем расстояние в реальном пространстве как меру расстояния между точками в нашем
+  вымышленном Евклидовом пространстве.
 
 
 # Spaces
@@ -31,9 +246,58 @@
     - We can step to (and only to) neighbouring points.
     - How much a movement between points cost (distance).
       Movement in any direction cost the same.
+    - ПРИ ВЫВОДЕ ЛЮБЫХ ТЕОРИЙ ОРИЕНТИРУЮСЬ ТОЛЬКО НА ЭТИ ФАКТЫ.
 - We can then label points of our real space somehow, using some labelling method. 
 - One method is label points in real space is called "equcledian space":
     - In a Euclidean space, smallest regions of space are squares/cubes
+    - Количество шагов - всё что имеет значение. Не представляй шестиугольники и расстояние
+      между ними в реальном пространстве. Нет. Расстояние в реальном пространстве И ЕСТЬ КОЛИЧЕСТВО
+      ШАГОВ В НЕМ.
+    - Мы изначально стороны видим что типа движение в любую сторону занимает одну дистанцию
+      так как ДЛЯ НАС это типа одна дистанция, а как там внутри у пространтва устроено все хз.
+      Но суть в том что нам нужно как то самим математически квантизовать физическое пространство
+      так чтобы мы могли говорить а фигурах как о наборах точек и о длинах как о числе необходимых для
+      фигуры точек (если это возможно хз).
+      Возможно о длинах лучше говорить как о числе точек физического пространства, то есть не
+      наших Евклидовых точек/квадратиков а вот мы сами ок, свои точки можем расставлять только на
+      ограниченное число квадратиков где есть минимальных квадратик но расстояние все равно хотим измерять
+      не в числе закрашенных квадратиков а в __количестве точек реального пространства между нашими вымышленными 
+      квадратиками.__ И тгда нужно полюбому типа разворачивать, так как наши оси по определению показывают
+      нам чиссло шагов в реальном пространстве.
+    - Нам не нужно думать типа "а как реальное пространство так всё уложило в себя что всё так
+      ровненько" - нам КАЖНСТЯ что всё ровненько так как мы воспринимаем что ровно то, что это
+      пространство даёт нам воспринимать ровным. Так что теперь мы тупо хотим подстроить по это пространство
+      свое Евклидово пространство и ещё потом измерять длины/расстояния в реальном пространстве между
+      разными евклидовыми точками и число физического пространства занимаемое кривыми.
+      Да, мы реально всегда оперируем разворотом, типа оп развернули, ну вот. 
+      И в матане тоже типа ну провели несколько касательных, вод и длина кривой, пожалуйста.
+      Всегда мы все измеряем прямыми которые мы развернули, развернутыми осями.
+      Только так мы можем убрать погрешность.
+      Считать число евклидовы квадратиков  - ПРАВИЛЬНО, НО НУЖНО СНАЧАЛА РАЗВЕРНУТЬ ОСИ!!!
+    - ИЗНАЧАЛЬНАЯ резметка реального пространства:
+        - Ок, берём 2 прямые где количество реального пространства между точками одинаковое
+	  (что такое прямая?)
+	- Ставим эти прямые препендикулярно друг-другу
+	  (Что значит перпендикулярно?)
+	- Близжайшая точка на каждой из прямых - координаты
+	  (как мы находим близжайшую точку?)
+    - Мы измеряем дистанции не как количество наших евклидовых кубиков а как количество кубиков
+      но если бы мы развернули оси. Считать кубики/точки не вариент, выходит дерьмо, на любом массштабе.
+      Получается слишком изрезанная линия. За счёт этого всегда большая погрещность, процент 
+      погрешности не уменьшается, даже если брать очень длинные линии. Так что нам нужен типа
+      разворот осей. Мы же знаем что евклидово пространство это не правда, что нас интересует
+      число шагов в реальном пространстве а все изрезав Евклидовой решёткой и считая эти евклидовы
+      квадратики, мы очень плохо приближаем количество реального пространтсва между евклидовыми точками.
+      Если считать точки.кубики не разворачивая - всегда будет погрешность, не зависимо от массштаба
+      в процентном отношении она будет одна.
+      Но что вообще значит развернуть оси?
+    - Мы чувствует количество шагов между двумя точками, так-что можем расставить точки каждой из
+      осей координат. Все, у нас есть евклидово пространство и дальше мы работаем только с ним
+      и расстояние измеряем в нем, по посчитанным заранее формулам, определяющим реальную дистанцию
+      между точками в физическом пространстве.
+    - Теперь расстояние для нас - количество шагов в евклидовом пространсве.
+    - После того как мы расставили точки координат, кординаты  любой другой точки точки - количество 
+      минимальных шагов в Евклидовом пространстве до линии координат (набора точек).
     - It actually does not label all real points, because diagonal steps cost more
       so it is only an approximation. We can not go to the smallest region of space
       using this method. we can only zoom out a bit and label like every 10th or 100th
@@ -55,16 +319,41 @@
       only use labelled dots now. Amount of real space steps between those dots will be how
       we define distance between our Euclidean dots.
 - That is it, I just labelled all points of real space with my Euclidian points in a
-  meaningful and convenient way. Now I can see that a distance between my points is actually
-  a distance in a real space.
+  meaningful and convenient way. Then define a distance between my points as a distance
+  in a real physical space, undarstant how to count it mathematically and we done.
+
+<img src="img/hex_circle.png" width="800"/><br>
+<img src="img/hex_line.png" width="800"/><br>
+<img src="img/hex_to_eucl_diagonal_step.png" width="800"/><br>
+
+
+# Geometry
+- We create a Euclidean space and then operate on sets of points in that space
+- Any figure is just a set of points in our space
+- In a Euclidean space, smallest regions of space are squares/cubes
+  So we see any figure as a set of points or a set of colored squares/cubes.
+- Angle is measured by dividing the amount of space (steps in a physical space or number
+  of Euclidean space dots/squares) needed for an arc by the amount of eiclidean dots 
+  needed for a radius by the amount of eiclidean dots 
+  needed for a radius.
+- Volume is the amount of euclidean points/squares needed for the figure
+- A curve/line (function) might only have 1 vertical Euclidean dot/cube
 
 
 
-<img src="img/hex_circle.png" width="200"/><br>
-<img src="img/hex_line.png" width="200"/><br>
-<img src="img/hex_to_eucl_diagonal_step.png" width="200"/><br>
-
-
+# Algebra
+- We have different sets of numbers
+- We have operations on those numbers
+- Those operations have some properties and methods to execute them
+- Operations are consist of smaller operarions
+- Smallest operation is increment/decrement/count - all kind of the same thing
+- Count operation: take a set of numbers with order relation defined on them
+- Order relation is basically a function that maps a finite set of numbers to itself
+  This is just a function that kaes a number as input and returns a next number
+  We take a set of numbers and define such a function on that set.
+  We also define decrement (or count backwards) function.
+  Havint those 2 functions we can now define addition, multiplication, substruction, 
+  division and so on.
 
 
 
