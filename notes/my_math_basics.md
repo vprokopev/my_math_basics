@@ -69,7 +69,14 @@ So, basically, changing the order and types of functions applied to arguments, t
 
 
 
-Real space as a set or blobs with random distances:
+# Spaces and geometry
+- For now, I will not be able to fully understand it. Leave it for topology
+class. Just use real-values metric with infinite precicion for now, and an
+infinite set as a Euclidean space. Then just measure the amount of space.
+
+Any finite space as a set or blobs/dots with random distances:
+- Distance shows the amount of space and that is what we interested in.
+- Blob is created from a point by taking 
 - A blob/point is full or empty, nothing else
 - There is a finite number of blobs/points
 - There is a distance metric between blobs/points
@@ -85,11 +92,19 @@ on a path to that dot, but approximation is very close (there is no straight pat
 because of discreteness, path is not linear).
 - If the distance metric has finite precicion, lengths and volumes etc will not
 be precise, even if measured using distances, not paths.
+- In a 'real' space, distances are probably a bit random, that ensures there
+is no direction and errors between path (sum of steps) and distance (metric),
+that caused by finite precicion are small.
+- In a Euclidean space, errors between a path distance sometimes as big as 8%,
+and sometimes 0.
+
+
+
+kuku kakashka slava byaka kozlina zhopa lyubov vorobey belka cheburek chubaka mops igoryan igoryek
 
 
 
 ------------------------------------------------------
-# Spaces and geometry
 - Мы знаем количество реального пространства между Евклидовыми точками, так-как мы сами задали это
 пространство своими правилами.
 - Если я считаю метрику дистанции основой и признаю что дискретное подмножество точек, заданное
